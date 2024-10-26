@@ -92,10 +92,26 @@ header {
   position: absolute;
   bottom: -4rem;
   width: 100%;
+  align-content: center;
 }
 .pick_up_details_upper_container {
   display: flex;
   justify-content: space-between;
+}
+.pick_up_details_upper_container p {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.pick_up_details_lower_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 17px;
+}
+.drop_off_details_lower_container{
+  display: flex;
+  justify-content: space-between;
+  gap: 17px;
 }
 .drop_off_details_upper_container {
   display: flex;
@@ -147,13 +163,15 @@ header {
   margin-top: 80px;
 }
 .our_services_content div {
+  
   flex-wrap: wrap;
   border: 1px solid black;
   border-radius: 10px;
-  width: 350px;
+  min-width: 350px;
   height: 450px;
 }
-.box {
+.our_services_content_box {
+  
 }
 
 /* How it works section */
@@ -193,6 +211,11 @@ header {
 .why_choose_us_content_left img {
   width: 600px;
 }
+.why_choose_us_content_logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .why_choose_us_content {
   display: flex;
   justify-content: space-between;
@@ -200,6 +223,7 @@ header {
 .why_choose_us_content_right_container {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   /* justify-content: center;
   align-items: center; */
 }
@@ -219,6 +243,7 @@ header {
   padding: 0rem 15rem;
   height: 600px;
 }
+
 .trusted_by {
   display: flex;
   flex-direction: column;
@@ -250,6 +275,8 @@ header {
   border: 2px solid;
   width: 380px;
   height: 200px;
+  border-radius: 5px;
+  
 }
 .trusted_by_button {
   display: flex;
