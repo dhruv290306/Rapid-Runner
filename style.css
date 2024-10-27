@@ -444,17 +444,15 @@ header {
 /* footer section */
 footer {
   background-color: #c4c4c4;
-  height: 430px;
+  height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 /* Upper Footer section */
 .upper_footer {
-  height: 400px;
   display: flex;
   justify-content: space-between;
-  /* border-bottom: 1px solid #969595; */
 }
 .upper_footer a {
   text-decoration: none;
@@ -467,39 +465,46 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 18px;
 }
 #footer_logo_text {
   font-weight: 400;
   font-size: 13px;
 }
+.footer_logo_icon {
+  display: flex;
+  justify-content: start;
+  gap: 35px;
+}
 .footer_about {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  /* gap: 20px; */
+  justify-content: space-evenly;
+  gap: 15px;
 }
-.footer_services_title {
-  font-size: 18px;
+.footer_about p,
+.footer_services p {
   font-weight: 500;
+  font-size: 18px;
+}
+.footer_about a,
+.footer_services a {
+  font-weight: 400;
+  font-size: 14px;
 }
 
-.footer_services_container {
-  font-size: 14px;
-  font-weight: 400;
+.footer_services_sub {
+  display: flex;
+  gap: 45px;
+  height: 100%;
 }
-.footer_about {
+.footer_services_1,
+.footer_services_2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
 }
-.footer_services {
-  margin: 100px 0px;
-}
-.footer_services_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 /* Lower Footer section */
 .lower_footer {
   display: flex;
@@ -515,7 +520,3 @@ footer {
   font-weight: 400;
   margin-top: 23px;
 }
-/* .footer_logo_icon i{
-  background-color: white;
-  border-radius: 15px;
-} */
