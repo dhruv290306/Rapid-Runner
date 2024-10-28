@@ -10,6 +10,7 @@
   padding: 0rem 15rem;
 }
 header {
+  height: 542px;
   background-color: #d4d4d4;
 }
 
@@ -17,27 +18,35 @@ header {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 25px 0px;
+  padding: 22px 0px;
 }
 .logo img {
-  height: 35px;
+  height: 33px;
 }
 .action {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 59px;
+  margin-right: 13%;
+  margin-bottom: 4px;
 }
 .action a {
   text-decoration: none;
   color: black;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 430;
 }
 .account_logo {
   display: flex;
   align-items: center;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 450;
+  margin-bottom: 4px;
+}
+.account img {
+  width: 30px;
+  opacity: 0.8;
+  margin: 0px 4px;
 }
 
 .account {
@@ -45,14 +54,26 @@ header {
 }
 .hero_title {
   text-transform: capitalize;
-  font-weight: 415;
-  font-size: 40px;
+  font-weight: 401;
+  font-size: 41px;
   line-height: 55px;
+}
+.hero_desc li {
+  font-size: 13.5px;
+  line-height: 1.9;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+  font-weight: 400;
+}
+.hero_desc {
+  margin-bottom: 30px;
 }
 .main_section {
   display: flex;
   gap: 70px;
-  margin: 40px 0px;
+  margin: 59px 0px;
   padding-bottom: 100px;
   justify-content: space-between;
 }
@@ -60,20 +81,23 @@ header {
 .hero_left {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 13px;
 }
 .hero_right img {
   width: 500px;
 }
 .main_section button {
   background-color: black;
-  width: 130px;
-  height: 50px;
+  width: 115px;
+  height: 42px;
   border: none;
   color: white;
   font-weight: 700;
-  padding: 15px 32px;
-  border-radius: 4px;
+  /* padding: 15px 32px; */
+  border-radius: 3px;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  margin-top: -20px;
 }
 .hero_desc ul {
   padding-left: 20px;
@@ -87,11 +111,11 @@ header {
 .location {
   display: flex;
   background-color: #f3f3f3;
-  height: 115px;
+  height: 110px;
   border-radius: 10px;
   justify-content: space-between;
   position: absolute;
-  bottom: -4rem;
+  bottom: -1rem;
   width: 100%;
   align-content: center;
   padding: 20px 40px;
@@ -150,35 +174,40 @@ header {
 .upper {
   display: flex;
   justify-content: center;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 400;
 }
 .lower {
   display: flex;
   justify-content: center;
-  font-size: 45px;
+  font-size: 36px;
   font-weight: 500;
 }
 
 .main_main {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 /* Our services section */
 .our_services_content {
   padding: 0rem 20rem;
-  /* display: flex;
-  justify-content: space-evenly; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
 }
 .our_services_title {
   display: flex;
   flex-direction: column;
   margin-top: 80px;
+  gap: 6px;
 }
 .our_services_content div {
   flex-wrap: wrap;
   border-radius: 10px;
-  height: 380px;
+  height: 370px;
 }
 .our_services_content img {
   width: 280px;
@@ -186,13 +215,14 @@ header {
 }
 .our_services_content button {
   background-color: black;
-  width: 122px;
+  width: 105px;
+  height: 33px;
   border: none;
   color: white;
   font-size: 11px;
   font-weight: 500;
-  padding: 12px 0px;
-  border-radius: 5px;
+  margin-top: 8px;
+  border-radius: 3px;
 }
 .box1 {
   margin-top: 30px;
@@ -223,24 +253,24 @@ header {
 .row2_box3_content {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 20px 9px;
+  gap: 11px;
+  padding: 29px 20px;
 }
 .row2 {
   display: flex;
   justify-content: space-between;
 }
 .our_services_content_font1 {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 490;
 }
 .our_services_content_font2 {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 400;
 }
 /* How it works section */
 .how_it_work {
-  height: 520px;
+  height: 505px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,7 +278,7 @@ header {
   padding: 0px;
 }
 .how_it_work img {
-  height: 385px;
+  height: 375px;
 }
 
 /* Why choose us section */
@@ -267,6 +297,7 @@ header {
 #why_choose_us_title_1 {
   font-size: 40px;
   font-weight: 500;
+
 }
 #why_choose_us_title_2 {
   font-size: 14px;
@@ -274,6 +305,15 @@ header {
 }
 .why_choose_us_content_left img {
   width: 600px;
+}
+.why_choose_us_title_2 p{
+  font-size: 14px;
+}
+.why_choose_us_space{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 9px;
 }
 .why_choose_us_content_logo {
   display: flex;
@@ -290,24 +330,34 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
 
-  /* justify-content: center;
-  align-items: center; */
 }
+.why_choose_us_content_right_container{
+  display: flex;
+  flex-direction: column; 
+  gap: 50px;
+  justify-content: space-evenly;
+}
+.why_choose_us_content_right_container_heading{
+  font-size: 18px ;
+  
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 550;
+  color: #1A202C;
 
-.why_choose_us_content_right_container_heading {
-  font-size: 20px;
-  font-weight: 600px;
 }
-.why_choose_us_content_right_container_content {
-  font-size: 14px;
-  font-weight: 400px;
+.why_choose_us_content_right_container_content{
+  font-size: 13px ;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  color: #1A202C;
+  line-height: 1.5;
 }
 
 /* Trusted by section */
 .trusted_by {
   background-color: #f5f5f5;
   padding: 0rem 15rem;
-  height: 560px;
+  height: 550px;
 }
 
 .trusted_by {
@@ -339,7 +389,7 @@ header {
   /* padding: 0rem 15rem; */
 }
 .testi {
-  width: 340px;
+  width: 315px;
   height: 190px;
   border-radius: 7px;
   background-color: #c4c4c4;
@@ -357,7 +407,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0px 22px;
+  padding: 0px 20px;
 }
 #testi_1_profile_left,
 #testi_2_profile_left,
@@ -370,26 +420,29 @@ header {
 #testi_1_profile_left,
 #testi_2_profile_left,
 #testi_3_profile_left i {
-  font-size: 28px;
+  font-size: 25px;
+}
+#testi_3_profile_right {
+  font-size: 14px;
 }
 #testi_1_name,
 #testi_2_name,
 #testi_3_name {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
 }
 #testi_1_loc,
 #testi_2_loc,
 #testi_3_loc {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   color: #4f5665;
 }
 #testi_1_content,
 #testi_2_content,
 #testi_3_content {
-  font-size: 14px;
-  font-weight: 3900;
+  font-size: 12px;
+  font-weight: 390;
   line-height: 25px;
 }
 .trusted_by_button {
